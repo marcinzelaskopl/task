@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.grid-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto; }
+  .grid-container .row::before, .grid-container .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid-container [class*='col-'] {
+    float: none;
+    width: 100%;
+    min-height: 1px;
+    padding: 12px; }
+    @media (min-width: 550px) {
+      .grid-container [class*='col-'] {
+        float: left; } }
+  @media (min-width: 550px) {
+    .grid-container .col-1 {
+      width: 8.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-2 {
+      width: 16.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-3 {
+      width: 25%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-4 {
+      width: 33.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-5 {
+      width: 41.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-6 {
+      width: 50%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-7 {
+      width: 58.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-8 {
+      width: 66.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-9 {
+      width: 75%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-10 {
+      width: 83.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-11 {
+      width: 91.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-12 {
+      width: 100%; } }
+
+.frontSection {
+  height: 100vh;
+  background-image: url("./_assets/bg2.jpg"); }
+
+.menu {
+  height: 7vh;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none; }
+  .menu li {
+    font-size: 20px;
+    margin-right: 120px;
+    margin-top: 70px;
+    padding: 10px 20px; }
+    .menu li:hover {
+      cursor: pointer;
+      border: 1px solid cornflowerblue;
+      border-radius: 25px; }
+  .menu .logo {
+    margin-top: 50px;
+    margin-right: 400px;
+    font-size: 40px;
+    pointer-events: none; }
+    .menu .logo span {
+      letter-spacing: 3px;
+      font-weight: 100; }
+
+/*# sourceMappingURL=App.css.map */
